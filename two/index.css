@@ -1,0 +1,18 @@
+.top_heading {
+  border: 5px solid blue;
+  background-color: lightblue;
+
+}
+
+.heading_title {
+  text-align: center;
+}
+
+.table_row {
+  margin-top: 10px;
+  border: 3px solid black;
+}
+
+.cell {
+  border-right: 3px solid black;
+}
