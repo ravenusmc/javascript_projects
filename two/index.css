@@ -1,11 +1,18 @@
 .top_heading {
   border: 5px solid blue;
   background-color: lightblue;
-
 }
 
 .heading_title {
   text-align: center;
+}
+
+.directions {
+  display: none;
+}
+
+.board {
+  margin-left: 40%;
 }
 
 .table_row {

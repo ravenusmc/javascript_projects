@@ -10,15 +10,25 @@
     <h1 class="heading_title">Simple Battle Ship</h1>
   </div>
 
-  <table class="table_row">
-    <tr>
-      <td class='cell'>One</td>
-      <td class='cell'>Two</td>
-      <td class='cell'>Three</td>
-      <td class='cell'>Four</td>
-      <td>Five</td>
-    </tr>
-  </table>
+  <p>Directions: <button id="toggleList">Push to See Directions</button></p>
+
+  <div class='directions'>
+    <p>The goal is to destroy the ship.</p>
+    <p>Do this buy clicking on individual boxes of the table below</p>
+  </div>
+
+
+  <div class="board">
+    <table class="table_row">
+      <tr>
+        <td id="one" onclick="test(hit)" class='cell'>One</td>
+        <td id="two" class='cell'>Two</td>
+        <td id="three" class='cell'>Three</td>
+        <td id="four"class='cell'>Four</td>
+        <td id="five">Five</td>
+      </tr>
+    </table>
+  </div>
 
 <script type="text/javascript" src="index.js"></script>
 </body>
