@@ -3,33 +3,95 @@
 <head>
   <title>Simple BattleShip</title>
   <link rel="stylesheet" type="text/css" href="index.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
 </head>
 <body>
 
   <div class="top_heading">
     <h1 class="heading_title">Simple Battle Ship</h1>
+    <p class="heading_title">(not really battleship)</p>
   </div>
 
-  <p>Directions: <button id="toggleList">Push to See Directions</button></p>
+  <p class='heading_title direction_fix'>Directions: <button id="toggleList" class="btn btn-primary">Push to See Directions</button></p>
 
-  <div class='directions'>
+  <div class='heading_title directions'>
+    <h1>Directions</h1>
     <p>The goal is to destroy the ship.</p>
     <p>Do this buy clicking on individual boxes of the table below</p>
+    <p>Green means you hit, Red is a miss, black is neither!</p>
+    <p>Pretty simple but this is a simple game!</p>
   </div>
-
 
   <div class="board">
     <table class="table_row">
       <tr>
-        <td id="one" onclick="test(hit)" class='cell'>One</td>
-        <td id="two" class='cell'>Two</td>
-        <td id="three" class='cell'>Three</td>
-        <td id="four"class='cell'>Four</td>
-        <td id="five">Five</td>
+        <td id="one" onclick="attack()" class='cell cellb'>One</td>
+        <td id="two" onclick="attack()" class='cell cellb'>Two</td>
+        <td id="three" onclick="attack()" class='cell cellb'>Three</td>
+        <td id="four" onclick="attack()"class='cell cellb'>Four</td>
+        <td id="five" onclick="attack()" class='cellb'>Five</td>
+      </tr>
+      <tr>
+        <td id="six" onclick="attack()" class='cell cellb'>Six</td>
+        <td id="seven" onclick="attack()" class='cell cellb'>Seven</td>
+        <td id="eight" onclick="attack()" class='cell cellb'>Eight</td>
+        <td id="nine" onclick="attack()" class='cell cellb'>Nine</td>
+        <td id="ten" onclick="attack()"class='cellb'>Ten</td>
+      </tr>
+      <tr>
+        <td id="eleven" onclick="attack()" class='cell'>Eleven</td>
+        <td id="twelve" onclick="attack()" class='cell'>Twelve</td>
+        <td id="thirteen" onclick="attack()" class='cell'>Thirteen</td>
+        <td id="fourteen" onclick="attack()"class='cell'>Fourteen</td>
+        <td id="fifteen" onclick="attack()">Fifteen</td>
       </tr>
     </table>
+  </div>
+
+  <div class="heading_title">
+    <h1>Hits:</h1>
+    <p id='hitArea'></p>
+    <h1>Misses:</h1>
+    <p id='missArea'></p>
   </div>
 
 <script type="text/javascript" src="index.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

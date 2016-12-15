@@ -11,6 +11,10 @@
   display: none;
 }
 
+.direction_fix {
+  margin-top: 10px;
+}
+
 .board {
   margin-left: 40%;
 }
@@ -22,4 +26,8 @@
 
 .cell {
   border-right: 3px solid black;
+}
+
+.cellb {
+  border-bottom: 3px solid black;
 }
