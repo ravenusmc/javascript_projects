@@ -29,63 +29,322 @@ function fireShell(){
     }
 }
 
-// function changeColor(){
-
-//   let one = document.getElementById('one').innerHTML;
-//   let one = document.getElementById('two').innerHTML;
-
-
-//   toggleList.addEventListener('click', () => {
-//     if ()
-//   }
-
-
-//   if (one = 'One'){
-//     let target = document.getElementById('one');
-//     return target;
-//   }
-// }
-
 //This function will determine if the user hit a space. I really hate having 15 functions
 //That do the same thing over and over again. I may come back and fix this at a later date.
 function attackOne(){
 
   let target = document.getElementById('one');
-
-  //colorChange = changeColor();
   
   fire = fireShell();
-  
-  if (fire){
-    target.style.color = 'green';
-    hit += 1;
-    hits(hit);
+  if (target.style.color == 'black'){
+    if (fire){
+      target.style.color = 'green';
+      hit += 1;
+      hits(hit);
+    }else {
+      target.style.color = 'red';
+      miss += 1;
+      misses(miss);
+    }
   }else {
-    target.style.color = 'red';
-    miss += 1;
-    misses(miss);
+    alert("You hit there!");
   }
+
 }
 
 function attackTwo(){
 
   let target = document.getElementById('two');
-
-  //colorChange = changeColor();
   
   fire = fireShell();
-  
-  if (fire){
-    target.style.color = 'green';
-    hit += 1;
-    hits(hit);
+  if (target.style.color == 'black'){
+    if (fire){
+      target.style.color = 'green';
+      hit += 1;
+      hits(hit);
+    }else {
+      target.style.color = 'red';
+      miss += 1;
+      misses(miss);
+    }
   }else {
-    target.style.color = 'red';
-    miss += 1;
-    misses(miss);
+    alert("You hit there!");
   }
+
 }
 
+function attackThree(){
+
+  let target = document.getElementById('three');
+  
+  fire = fireShell();
+  if (target.style.color == 'black'){
+    if (fire){
+      target.style.color = 'green';
+      hit += 1;
+      hits(hit);
+    }else {
+      target.style.color = 'red';
+      miss += 1;
+      misses(miss);
+    }
+  }else {
+    alert("You hit there!");
+  }
+
+}
+
+function attackFour(){
+
+  let target = document.getElementById('four');
+  
+  fire = fireShell();
+  if (target.style.color == 'black'){
+    if (fire){
+      target.style.color = 'green';
+      hit += 1;
+      hits(hit);
+    }else {
+      target.style.color = 'red';
+      miss += 1;
+      misses(miss);
+    }
+  }else {
+    alert("You hit there!");
+  }
+
+}
+
+function attackFive(){
+
+  let target = document.getElementById('five');
+  
+  fire = fireShell();
+  if (target.style.color == 'black'){
+    if (fire){
+      target.style.color = 'green';
+      hit += 1;
+      hits(hit);
+    }else {
+      target.style.color = 'red';
+      miss += 1;
+      misses(miss);
+    }
+  }else {
+    alert("You hit there!");
+  }
+
+}
+
+function attackSix(){
+
+  let target = document.getElementById('six');
+  
+  fire = fireShell();
+  if (target.style.color == 'black'){
+    if (fire){
+      target.style.color = 'green';
+      hit += 1;
+      hits(hit);
+    }else {
+      target.style.color = 'red';
+      miss += 1;
+      misses(miss);
+    }
+  }else {
+    alert("You hit there!");
+  }
+
+}
+
+function attackSeven(){
+
+  let target = document.getElementById('seven');
+  
+  fire = fireShell();
+  if (target.style.color == 'black'){
+    if (fire){
+      target.style.color = 'green';
+      hit += 1;
+      hits(hit);
+    }else {
+      target.style.color = 'red';
+      miss += 1;
+      misses(miss);
+    }
+  }else {
+    alert("You hit there!");
+  }
+
+}
+
+function attackEight(){
+
+  let target = document.getElementById('eight');
+  
+  fire = fireShell();
+  if (target.style.color == 'black'){
+    if (fire){
+      target.style.color = 'green';
+      hit += 1;
+      hits(hit);
+    }else {
+      target.style.color = 'red';
+      miss += 1;
+      misses(miss);
+    }
+  }else {
+    alert("You hit there!");
+  }
+
+}
+
+function attackNine(){
+
+  let target = document.getElementById('nine');
+  
+  fire = fireShell();
+  if (target.style.color == 'black'){
+    if (fire){
+      target.style.color = 'green';
+      hit += 1;
+      hits(hit);
+    }else {
+      target.style.color = 'red';
+      miss += 1;
+      misses(miss);
+    }
+  }else {
+    alert("You hit there!");
+  }
+
+}
+
+function attackTen(){
+
+  let target = document.getElementById('ten');
+  
+  fire = fireShell();
+  if (target.style.color == 'black'){
+    if (fire){
+      target.style.color = 'green';
+      hit += 1;
+      hits(hit);
+    }else {
+      target.style.color = 'red';
+      miss += 1;
+      misses(miss);
+    }
+  }else {
+    alert("You hit there!");
+  }
+
+}
+
+function attackEleven(){
+
+  let target = document.getElementById('eleven');
+  
+  fire = fireShell();
+  if (target.style.color == 'black'){
+    if (fire){
+      target.style.color = 'green';
+      hit += 1;
+      hits(hit);
+    }else {
+      target.style.color = 'red';
+      miss += 1;
+      misses(miss);
+    }
+  }else {
+    alert("You hit there!");
+  }
+
+}
+
+function attackTwelve(){
+
+  let target = document.getElementById('twelve');
+  
+  fire = fireShell();
+  if (target.style.color == 'black'){
+    if (fire){
+      target.style.color = 'green';
+      hit += 1;
+      hits(hit);
+    }else {
+      target.style.color = 'red';
+      miss += 1;
+      misses(miss);
+    }
+  }else {
+    alert("You hit there!");
+  }
+
+}
+
+function attackThirteen(){
+
+  let target = document.getElementById('thirteen');
+  
+  fire = fireShell();
+  if (target.style.color == 'black'){
+    if (fire){
+      target.style.color = 'green';
+      hit += 1;
+      hits(hit);
+    }else {
+      target.style.color = 'red';
+      miss += 1;
+      misses(miss);
+    }
+  }else {
+    alert("You hit there!");
+  }
+
+}
+
+function attackFourteen(){
+
+  let target = document.getElementById('fourteen');
+  
+  fire = fireShell();
+  if (target.style.color == 'black'){
+    if (fire){
+      target.style.color = 'green';
+      hit += 1;
+      hits(hit);
+    }else {
+      target.style.color = 'red';
+      miss += 1;
+      misses(miss);
+    }
+  }else {
+    alert("You hit there!");
+  }
+
+}
+
+function attackFifteen(){
+
+  let target = document.getElementById('fifteen');
+  
+  fire = fireShell();
+  if (target.style.color == 'black'){
+    if (fire){
+      target.style.color = 'green';
+      hit += 1;
+      hits(hit);
+    }else {
+      target.style.color = 'red';
+      miss += 1;
+      misses(miss);
+    }
+  }else {
+    alert("You hit there!");
+  }
+
+}
 
 
 
