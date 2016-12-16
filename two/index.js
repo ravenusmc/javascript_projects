@@ -29,10 +29,30 @@ function fireShell(){
     }
 }
 
-//This function will determine if the user hit a space. 
-function attack(){
+// function changeColor(){
+
+//   let one = document.getElementById('one').innerHTML;
+//   let one = document.getElementById('two').innerHTML;
+
+
+//   toggleList.addEventListener('click', () => {
+//     if ()
+//   }
+
+
+//   if (one = 'One'){
+//     let target = document.getElementById('one');
+//     return target;
+//   }
+// }
+
+//This function will determine if the user hit a space. I really hate having 15 functions
+//That do the same thing over and over again. I may come back and fix this at a later date.
+function attackOne(){
 
   let target = document.getElementById('one');
+
+  //colorChange = changeColor();
   
   fire = fireShell();
   
@@ -45,8 +65,28 @@ function attack(){
     miss += 1;
     misses(miss);
   }
-
 }
+
+function attackTwo(){
+
+  let target = document.getElementById('two');
+
+  //colorChange = changeColor();
+  
+  fire = fireShell();
+  
+  if (fire){
+    target.style.color = 'green';
+    hit += 1;
+    hits(hit);
+  }else {
+    target.style.color = 'red';
+    miss += 1;
+    misses(miss);
+  }
+}
+
+
 
 
 //Code for Directions appear and disappearing 
