@@ -1,3 +1,17 @@
+
+/* Generic CSS */
 .center {
   text-align: center;
+}
+
+/* CSS for heading  */
+.heading {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* CSS for deck */
+.margin {
+  margin-left: 100px;
+  margin-right: 10%;
 }
