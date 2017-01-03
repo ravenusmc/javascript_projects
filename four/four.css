@@ -4,6 +4,11 @@
   text-align: center;
 }
 
+img {
+  width:100%;
+  height:auto;
+}
+
 /* CSS for heading  */
 .heading {
   margin-top: 20px;
