@@ -35,3 +35,40 @@ function changeTwo() {
     targetTwo.style.color = 'black';
   }
 }
+
+function changeThree() {
+
+  let targetThree = document.getElementById('three');
+
+  if (targetThree.style.color == 'black'){
+    document.getElementById('three').src = "https://source.unsplash.com/iJu4dDmkuuk/255x200";
+    document.getElementById('headingThree').innerHTML = 'Needs the Traveler';
+    document.getElementById('three-paragraph').innerHTML = 'The world is meant to be explored';
+    targetThree.style.color = 'blue';
+  }else{
+    document.getElementById('three').src = "https://source.unsplash.com/ed-hLWaknyk/255x200";
+    document.getElementById('headingThree').innerHTML = 'The Lone Landscape...';
+    document.getElementById('three-paragraph').innerHTML = 'Perfect but yet yearning for something more...';
+    targetThree.style.color = 'black';
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
