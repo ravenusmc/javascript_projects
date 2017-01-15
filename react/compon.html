@@ -13,6 +13,22 @@
 
   <script type="text/babel">
 
+  var HelloWorld = React.createClass({
+    render: function(){
+      return(
+        <p>Hello, componentized World!</p>
+      );
+    }
+  });
+
+    ReactDOM.render(
+      <div>
+        <HelloWorld/>
+        <HelloWorld/>
+      </div>,
+      document.getElementById('container')
+    );
+
 
   </script>
 
