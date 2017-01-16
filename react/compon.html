@@ -16,15 +16,15 @@
   var HelloWorld = React.createClass({
     render: function(){
       return(
-        <p>Hello, componentized World!</p>
+        <p>Hello, {this.props.greetTarget}!</p>
       );
     }
   });
 
     ReactDOM.render(
       <div>
-        <HelloWorld/>
-        <HelloWorld/>
+        <HelloWorld greetTarget='Mike'/>
+        <HelloWorld greetTarget='Abby'/>
       </div>,
       document.getElementById('container')
     );
