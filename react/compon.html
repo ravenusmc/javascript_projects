@@ -21,13 +21,36 @@
     }
   });
 
-    ReactDOM.render(
-      <div>
-        <HelloWorld greetTarget='Mike'/>
-        <HelloWorld greetTarget='Abby'/>
-      </div>,
-      document.getElementById('container')
-    );
+    // ReactDOM.render(
+    //   <div>
+    //     <HelloWorld greetTarget='Mike'/>
+    //     <HelloWorld greetTarget='Abby'/>
+    //   </div>,
+    //   document.getElementById('container')
+    // );
+
+  /////// BUTTON ///////
+
+  //var name = prompt('What is your name: ');
+
+  var Buttonify = React.createClass({
+    render: function() {
+      return(
+        <div>
+          <button type={this.props.behavior}>{this.props.children}</button>
+        </div>
+      );
+    }
+  });
+
+  ReactDOM.render(
+    <div>
+      <HelloWorld greetTarget='Mike'/>
+      <Buttonify behavior="Submit">SEND DATA</Buttonify>
+      <HelloWorld greetTarget='Abby'/>
+    </div>,
+    document.querySelector("#container")
+    )
 
 
   </script>
