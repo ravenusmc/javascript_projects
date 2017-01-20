@@ -11,7 +11,6 @@
       padding: 50px;
       background-color: #FFF;
     }
-
   </style>
 </head>
 <body>
@@ -20,23 +19,41 @@
 
   <script type="text/babel">
 
+    var Desk = React.createClass({
+      render: function(){
+        return (
+          <p>The Desk</p>
+        );
+      }
+    });
+
+    var HelloWorld = React.createClass({
+      render: function(){
+        return (
+          <p>Hola, {this.props.greetTarget}!</p>
+        );
+      }
+    });
+
     var Letter = React.createClass({
       render: function(){
 
         var letterStyle = {
-            padding: 10,
-            margin: 10,
+            padding: 20,
+            margin: 15,
             backgroundColor: this.props.bgcolor,
             color: "#333",
             display: "inline-block",
             fontFamily: "monospace",
-            fontSize: 32,
+            fontSize: 15,
             textAlign: "center"
           };
 
-
         return (
           <div style={letterStyle}>
+            <HelloWorld greetTarget='Mike'></HelloWorld>
+            <Desk></Desk> 
+            <HelloWorld greetTarget='Ted'></HelloWorld>
             {this.props.children}
           </div>
           );
