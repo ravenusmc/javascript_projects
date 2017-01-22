@@ -15,20 +15,28 @@
 
 <body>
 
+  <header>
+    <h1>Playing with React</h1>
+  </header>
+  
+
   <div id='container'></div>
 
   <script type="text/babel">
 
-  var One = React.createClass({
+  var List = React.createClass({
     render: function(){
-      var oneStyle = {
+      var listStyle = {
         height: 150,
-        color: 'red',
-
+        color: 'blue'
       };
 
       return (
-        <p style={oneStyle}>Testing</p>
+        <ul style={listStyle}>
+          <li>Red</li>
+          <li>White</li>
+          <li>Blue</li>
+        </ul>
       );
     }
   });
@@ -42,7 +50,11 @@
         margin: 0
       };
       return (
-        <One></One>
+        <div>
+          <h2 style={labelStyle}>To Learn, you must take your time</h2>
+          <p style={labelStyle}>You must slow and study the material</p>
+          <List/>
+        </div>
       );
     }
   });
