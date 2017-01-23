@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Styling in React</title>
+  <script src="https://unpkg.com/react@15.3.2/dist/react.js"></script>
+  <script src="https://unpkg.com/react-dom@15.3.2/dist/react-dom.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
+  <style type="text/css">
+    #container {
+      padding: 50px;
+      background-color: #000;
+    }
+  </style>
+</head>
+
+  <header>
+    <h1>Playing with React, Part 2</h1>
+  </header>
+
+  <a href="one.html">First Page</a>
+
+  <div id='firstDiv'><div>
+
+  <script type="text/babel">
+
+    var One = React.createClass({
+      render: function(){
+
+        return (
+          <h1>Practice Page Two</h1>
+        );
+      }
+    });
+
+    var Two = React.createClass({
+      render: function(){
+
+        return (
+          <div>
+            <p>This is the second practice page</p>
+            <p>Practice Makes Perfect</p>
+          </div>
+        );
+      }
+    });
+
+    ReactDOM.render(
+      <div>
+        <One></One>
+        <Two></Two>
+      </div>,
+      document.querySelector("#firstDiv")
+    );
+
+
+  </script>
+
+<body>
